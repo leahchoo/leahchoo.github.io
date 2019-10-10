@@ -3,12 +3,18 @@ body {
 	margin: 0 auto;
 }
 
-a {
+p {
+	color: white;
+}
+
+/* CITY */
+
+.bg {
+	position: fixed;
 }
 
 
 .center {
-	/* animation:blur 2s infinite alternate; */
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -16,32 +22,113 @@ a {
 	transform: translate(-50%, -50%);
 }
 
-.hover:hover {
-	filter:blur(0px);
+
+.square {
+	position: fixed;
+	background: rgb(255, 255, 255, 1);
+	top: 50%;
+	left: 50%;
+	width: 450px;
+	height: 450px;
+	transform: translate(-50%, -50%);
+}
+
+.traffic {
+	border: 1px white solid;
+	width: 800px;
+	height: 300px;
+	position: fixed;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.circle {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: white;
 }
 
 /*
 
-@keyframes blur {
-  0% {
-      filter:blur(50px);
-  }
-  
-  100%{
-      filter:blur(0px);
-  }
+.green {
+	background: rgb(47, 145, 84, 100);
+}
+
+.amber {
+	background: rgb(255, 219, 41, 100);
+}
+
+.red {
+	background: rgb(196, 29, 29, 100);
 }
 
 */
 
-.square {
-	position: fixed;
-	background: white;
-	top: 50%;
-	left: 50%;
-	width: 500px;
-	height: 500px;
-	transform: translate(-50%, -50%);
+@keyframes red {
+  0 {
+    background: #111;
+  }
+  2%,
+  40% {
+    background: rgb(196, 29, 29, 100);
+  }
+  42%,
+  100% {
+    background: #111;
+  }
+}
+
+@keyframes amber {
+  0%,
+  20% {
+    background: #111;
+  }
+  22%,
+  40% {
+    background: rgb(255, 219, 41, 100);
+  }
+  42%,
+  80% {
+    background: #111;
+  }
+  82%,
+  100% {
+    background: rgb(255, 219, 41, 100);
+  }
+}
+
+@keyframes green {
+  0%,
+  40% {
+    background: #111;
+  }
+  42%,
+  80% {
+    background: rgb(47, 145, 84, 100);
+  }
+  82%,
+  100% {
+    background: #111;
+  }
+}
+
+.red {
+  animation: red 10s linear infinite;
+}
+
+.amber {
+  animation: amber 10s linear infinite;
+}
+
+.green {
+  animation: green 10s linear infinite;
 }
 
 
