@@ -1,3 +1,7 @@
+* {
+  margin: 0 auto;
+}
+
 body {
 	background: black;
 	margin: 0 auto;
@@ -5,6 +9,15 @@ body {
 
 p {
 	color: white;
+}
+
+.clock {
+  width: 100%;  
+  position: fixed;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 400px;
+  color: white;
+  text-align: center;
 }
 
 /* CITY */
@@ -35,31 +48,47 @@ p {
 
 /* traffic */
 
+.traffic-container {
+  position: fixed;
+  width: 100%;
+  background: red;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+#traffic-container {
+margin-top: 70px;
+color: white;
+width: 100%;
+height: 100%;
+background: red;
+}
+
 .traffic {
 	border: 1px white solid;
-	width: 800px;
-	height: 300px;
-	position: fixed;
-	transform: translate(-50%, -50%);
-	top: 50%;
-	left: 50%;
-
-	padding: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	width: 200px;
+	height: 100%;  
+	display: flex-wrap;
+  align-items: center;
 }
 
 .circle {
-	width: 200px;
-	height: 200px;
+  margin: 25px;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
 	background: white;
 }
 
 
 @keyframes red {
-  0 {
+  0% {
     background: #111;
   }
   2%,
@@ -106,8 +135,6 @@ p {
   }
 }
 
-
-
 .red {
   animation: red 10s linear infinite;
 }
@@ -120,8 +147,14 @@ p {
   animation: green 10s linear infinite;
 }
 
+.blink {
+  animation:blinkingText 1s infinite;
+}
 
-.circles-1 { 
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPScjZmZmJyAvPgogIDxjaXJjbGUgY3g9IjEiIGN5PSIxIiByPSIxIiBmaWxsPSIjMDAwIi8+Cjwvc3ZnPg=="); 
-  background-repeat: repeat; 
-} 
+@keyframes blinkingText{
+    0%{     color: #fff;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #fff;    }
+}
