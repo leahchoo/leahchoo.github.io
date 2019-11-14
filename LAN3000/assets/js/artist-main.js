@@ -8,7 +8,7 @@ $(document).ready(function(){
 		$link = value.Link;
 		$image = value.Image;
 
-		$('.link-list').append('<li><a href="' + $link + '">' + $artist +'</a></li>');
+		$('.link-list').append('<li><a href="assets/' + $link + '">' + $artist +'</a></li>');
 	});
 
 	
