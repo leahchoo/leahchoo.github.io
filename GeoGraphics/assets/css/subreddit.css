@@ -1,0 +1,42 @@
+@import url("city.css");
+
+/* subreddit */
+
+.headline {
+	position: fixed;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.contain {
+	position: fixed;
+	margin-top: 50vh;
+	width: 100vw;
+	display: flex;
+
+	font-family: 'Rubik', sans-serif;
+	font-size: 100px;
+	font-weight: 500;
+	line-height: 120px;
+	overflow: hidden;
+}
+
+.sub-container {
+	width: 20vw;
+	text-align: right;
+}
+
+.reddit-container {
+	padding: 0 20px;
+	width: 80vw;
+	overflow: hidden;
+}
+
+.slider {
+	animation: slider 15s linear infinite;
+}
+
+@keyframes slider {
+	0%   { transform: translateY(20%) }
+	100% { transform: translateY(-100%) }
+}

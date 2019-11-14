@@ -1,0 +1,93 @@
+@import url("city.css");
+
+/* emoji world */
+
+.header, .footer {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 150px;
+	text-align: center;
+}
+
+.content-window {
+	width: 100vw;
+	height: 100vh;
+	padding: 150px 0;
+	display: flex;
+}
+
+.header {
+	grid-area: header;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.footer {
+	grid-area: footer;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+.content {
+	width: 33vw;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.mid {
+	border-left: 1px dotted white;
+	border-right: 1px dotted white;
+}
+
+.bubble-container {
+	width: 100%;
+}
+
+.bubble {
+	font-size: 25px;
+	margin: 10px;
+	border-radius: 15px;
+	background: white;
+	color: black;
+	padding: 10px 15px;
+	text-align: center;
+	position: relative;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.rc:before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 15px solid white;
+	border-right: 15px solid transparent;
+	border-top: 15px solid white;
+	border-bottom: 15px solid transparent;
+	right: -16px;
+	top: 0px;
+}
+
+.lc:before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 15px solid transparent;
+	border-right: 15px solid white;
+	border-top: 15px solid white;
+	border-bottom: 15px solid transparent;
+	left: -16px;
+	top: 0px;
+}

@@ -1,0 +1,36 @@
+@import url("city.css");
+
+/* social media */
+
+.social-grid {
+	position: fixed;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid-item {
+	border: 1px dashed white;
+	padding: 60px;
+	width: 12.5vw;
+	height: 12.5vw;
+	text-align: center;
+	font-size: 45px;
+}
+
+.connecting-grid {
+	padding: 6vw;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#scramble {
+	font-family: 'Share Tech Mono', monospace;
+	color: white;
+	font-size: 30px;
+	white-space: nowrap;
+	background: black;
+	padding: 20px 10px;
+}

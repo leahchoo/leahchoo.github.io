@@ -1,0 +1,41 @@
+@import url("city.css");
+
+/* add to cart */
+
+.sidebar, .wall {
+	height: 100vh;
+}
+
+.sidebar {
+	position: fixed;
+	width: 20vw;
+	padding: 100px 50px;
+}
+
+.wall {
+	overflow: hidden;
+	margin-left: 30vw;
+}
+
+.rubik-h1 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	font-size: 80px;
+	text-transform: uppercase;
+}
+
+.add-to-cart {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	width: 20vw;
+	padding: 20px;
+	background: transparent;
+	border: 1px solid white;
+	color: white;
+}
+
+.add-to-cart:active {
+	background: white;
+	color: black;
+}

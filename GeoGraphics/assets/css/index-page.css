@@ -1,0 +1,17 @@
+@import url("global.css");
+
+.index-page {
+	display: flex;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.grid img {
+	width: 24vw;
+}
+
+

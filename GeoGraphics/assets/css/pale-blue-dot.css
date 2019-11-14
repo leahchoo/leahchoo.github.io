@@ -1,0 +1,46 @@
+@import url("earth.css");
+
+/* pale blue dot */
+
+.earth-container {
+	padding-top: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+.space {
+	width: 60vw;
+	font-family: 'Raleway', sans-serif;
+	font-size: 32px;
+	line-height: 50px;
+	text-indent: 50px;
+	margin: auto;
+	text-align: justify;
+	perspective: 300px; 
+}
+
+.space p {
+	width: 100%;
+	text-align: justify;
+	animation-name: swcrawl;
+	animation-duration: 40s;
+	opacity: 0;
+}
+
+
+@keyframes swcrawl {
+	0% {
+		transform: rotatex(30deg) translateY(200px);
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: rotatex(30deg) translateY(-750px);
+	}
+}

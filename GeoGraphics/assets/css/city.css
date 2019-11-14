@@ -1,0 +1,42 @@
+@import url("global.css");
+@import url("glitch.css");
+
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
+
+
+.rubik-mono-1 {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 150px;
+}
+
+.rubik-mono-2 {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 100px;
+}
+
+.bg-img {
+	position: fixed;
+}
+
+/* augment */
+
+.augment-window {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 30px;
+	text-align: justify;
+	width: 33.3vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+/* iot */
+
+.iot img {
+	width: 60%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

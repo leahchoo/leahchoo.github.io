@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+	margin: 0 auto;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.center {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.flex-columns {
+	width: 100vw;
+	display: flex;
+}

@@ -1,0 +1,51 @@
+@import url("earth.css");
+
+/* earth wind fire */
+
+.ewf {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+	padding: 300px 0;
+}
+
+.e, .w, .f {
+	font-size: 130px;
+	font-weight: 900;
+
+}
+
+.e {
+	
+	background: url("https://media.giphy.com/media/hES3mFdWoatVe/source.gif");
+	background-size: cover;
+	background-position: center;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+
+}
+
+.w {
+
+	background: url("https://media.giphy.com/media/HmTLatwLWpTQk/source.gif");
+	background-size: cover;
+	background-position: center;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+
+}
+
+.f {
+
+	background: url("https://media.giphy.com/media/6wpHEQNjkd74Q/source.gif");
+	background-size: cover;
+	background-position: center;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+
+}

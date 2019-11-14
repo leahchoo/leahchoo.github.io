@@ -1,0 +1,179 @@
+@import url("global.css");
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,900&display=swap');
+
+.galaxy {
+	position: fixed;
+	background:url('http://www.ultradrive.com/images/rdx_starfield.jpg');
+	margin: 0 auto;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* fire */
+
+.fire-container {
+	position: fixed;
+	width: 100vw;
+	top: 50px;
+}
+
+
+.fire {
+	text-align: center;
+	margin: 50px 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 100px;
+	font-weight: 900;
+	white-space: nowrap;
+	text-transform: uppercase;
+	
+}
+
+.center {
+	z-index: -1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.mother {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 300px;
+	font-weight: 900;
+	line-height: 700px;
+	text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+	color: white;
+}
+
+.water {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 300px;
+	font-weight: 900;
+	line-height: 350px;
+	background: url("https://media.giphy.com/media/JXHhI4o9NCf8k/source.gif");
+	background-size: cover;
+	background-position: top;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.circuit {
+	margin: 0 auto;
+	padding: 50px;
+	text-align: left;
+	font-size: 250px;
+	font-weight: 900;
+	line-height: 200px;
+	text-transform: uppercase;
+	background: url("https://media.giphy.com/media/I9NvYVQdKmLC0/source.gif");
+	background-size: cover;
+	background-position: top;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.circuit-2 {
+	width: 50vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: pink;
+}
+
+.circuit-2 img {
+	width: 100%;
+}
+
+.languages {
+	position: fixed;
+	top: -20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: 50px;
+}
+
+.language {
+	padding: 50px;
+	white-space: nowrap;
+}
+
+.future-window {
+	opacity: 0.5;
+	width: 70vw;
+	height: 40vw;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.window {
+	width: 50%;
+	height: 50%;
+}
+
+.window img {
+	width: 100%;
+	height: 100%;
+}
+
+.raleway-h1 {
+	text-transform: uppercase;
+	font-size: 100px;
+	font-weight: 900;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.moon {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+}
+
+.grid {
+	width: 100vw;
+	height: 100vh;
+}
+
+.gutter {
+	height: 10vh;
+	width: 100vw;
+}
+
+.row {
+	width: 100vw;
+	height: 35vh;
+	display: flex;
+	justify-content: space-between;
+}
+
+.grid-month {
+	width: 16vw;
+	height: 100%;
+	background: pink;
+}
+
+.month {
+	font-size: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px 0;
+	border-bottom: 1px solid white;
+	position: fixed;
+}
+
+.grid-month img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
